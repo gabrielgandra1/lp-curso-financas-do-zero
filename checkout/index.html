@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagamento simulado | Curso Finanças do Zero</title>
+  <meta name="description" content="Página de pagamento simulada do curso Finanças do Zero, criada para portfólio. Nenhum dado é coletado e nenhuma cobrança é feita.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#14532D">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preload" href="../assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script>document.documentElement.classList.add('js');try{var a=JSON.parse(localStorage.getItem('fz-a11y'));if(a&&a.fonte)document.documentElement.setAttribute('data-fonte',a.fonte);if(a&&a.contraste)document.documentElement.setAttribute('data-contraste','alto')}catch(e){}</script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/checkout.js" defer></script>
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><symbol id="i-accessibility" viewBox="0 0 24 24"><circle cx="16" cy="4" r="1"/><path d="m18 19 1-7-6 1"/><path d="m5 8 3-3 5.5 3-2.36 3.5"/><path d="M4.24 14.5a5 5 0 0 0 6.88 6"/><path d="M13.76 17.5a5 5 0 0 0-6.88-6"/></symbol><symbol id="i-contrast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 18a6 6 0 0 0 0-12v12z"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-qr-code" viewBox="0 0 24 24"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></symbol><symbol id="i-credit-card" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/><path d="M6 14h2"/></symbol><symbol id="i-barcode" viewBox="0 0 24 24"><path d="M3 5v14"/><path d="M8 5v14"/><path d="M12 5v14"/><path d="M17 5v14"/><path d="M21 5v14"/></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol><symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></symbol></svg>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <div class="a11y-bar" role="region" aria-label="Recursos de acessibilidade">
+    <div class="container a11y-bar__inner">
+      <p class="a11y-bar__title" id="a11y-titulo">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-accessibility"></use></svg>
+        Acessibilidade
+      </p>
+      <div class="a11y-bar__actions" role="group" aria-labelledby="a11y-titulo">
+        <button class="a11y-btn" type="button" data-a11y="menos">A−<span class="sr-only"> Diminuir o texto</span></button>
+        <button class="a11y-btn" type="button" data-a11y="mais">A+<span class="sr-only"> Aumentar o texto</span></button>
+        <button class="a11y-btn" type="button" data-a11y="contraste" aria-pressed="false">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-contrast"></use></svg>
+          <span class="a11y-btn__label">Alto contraste</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="../" aria-label="Finanças do Zero, voltar à página do curso">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect class="brand__bg" width="40" height="40" rx="10"></rect><circle class="brand__coin" cx="20" cy="20" r="10.5"></circle><path class="brand__arrow" d="M15.5 22.5 20 17l4.5 5.5"></path></svg>
+        <span>Finanças <span class="brand__accent">do Zero</span></span>
+      </a>
+      <p class="header__seal">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"></use></svg>
+        Ambiente de demonstração
+      </p>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1" class="checkout">
+    <div class="container">
+      <p class="demo-note" role="note">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"></use></svg>
+        <span><strong>Página de pagamento simulada.</strong> Nenhum dado é coletado e nenhuma cobrança é feita. Em um projeto real, os botões de compra levam à plataforma de pagamento escolhida.</span>
+      </p>
+      <h1>Finalize sua inscrição</h1>
+
+      <div class="checkout__grid">
+        <section class="summary" aria-labelledby="resumo-titulo">
+          <h2 id="resumo-titulo">Resumo do pedido</h2>
+          <p class="summary__product">Curso Finanças do Zero</p>
+          <ul class="summary__items" role="list">
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>6 módulos em vídeo e certificado</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>Acesso por 1 ano</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>3 bônus inclusos</li>
+          </ul>
+          <dl class="summary__totals">
+            <div><dt>Preço normal</dt><dd><del>R$ 397,00</del></dd></div>
+            <div><dt>Desconto</dt><dd>− R$ 200,00</dd></div>
+            <div class="summary__total"><dt>Total à vista</dt><dd>R$ 197,00</dd></div>
+          </dl>
+        </section>
+
+        <form class="pay" id="pagamento" data-checkout-form aria-labelledby="pagamento-titulo">
+          <h2 id="pagamento-titulo">Forma de pagamento</h2>
+          <fieldset class="pay__options">
+            <legend class="sr-only">Escolha como pagar</legend>
+            <label class="option">
+              <input type="radio" name="forma" value="pix" checked>
+              <span class="option__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-qr-code"></use></svg></span>
+              <span class="option__text"><strong>Pix</strong><span>R$ 197,00 à vista, com aprovação imediata</span></span>
+            </label>
+            <label class="option">
+              <input type="radio" name="forma" value="cartao">
+              <span class="option__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-credit-card"></use></svg></span>
+              <span class="option__text"><strong>Cartão de crédito</strong><span>12x de R$ 19,70 com juros (total de R$ 236,40) ou R$ 197,00 à vista</span></span>
+            </label>
+            <label class="option">
+              <input type="radio" name="forma" value="boleto">
+              <span class="option__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-barcode"></use></svg></span>
+              <span class="option__text"><strong>Boleto</strong><span>R$ 197,00 à vista, com aprovação em até 3 dias úteis</span></span>
+            </label>
+          </fieldset>
+          <button class="btn btn--buy btn--lg btn--block" type="submit">
+            Finalizar compra simulada
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
+          </button>
+          <p class="trust trust--center">
+            <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"></use></svg>Compra segura</span>
+            <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield-check"></use></svg>Garantia de 7 dias</span>
+          </p>
+        </form>
+      </div>
+
+      <section class="success" id="confirmacao" aria-labelledby="sucesso-titulo" tabindex="-1" hidden>
+        <span class="success__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-circle-check"></use></svg></span>
+        <h2 id="sucesso-titulo">Compra simulada com sucesso</h2>
+        <p data-success-text>Em um projeto real, você seria levado à plataforma de pagamento e receberia o acesso por e-mail.</p>
+        <a class="btn btn--primary" href="../">Voltar para a página do curso</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© 2026 Finanças do Zero Educação Ltda. · CNPJ 00.000.000/0001-00</p>
+      <p class="footer__concept"><strong>Projeto conceitual:</strong> curso, professora, preços e depoimentos são fictícios, criados para portfólio. <a href="https://github.com/gabrielgandra1/lp-curso-financas-do-zero">Ver o código no GitHub</a></p>
+    </div>
+  </footer>
+
+  <p class="sr-only" id="a11y-status" role="status" aria-live="polite"></p>
+</body>
+</html>

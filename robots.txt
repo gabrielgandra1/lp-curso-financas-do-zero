@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gabrielgandra1.github.io/lp-curso-financas-do-zero/sitemap.xml
